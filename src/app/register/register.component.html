@@ -1,0 +1,81 @@
+<section class="u-clearfix u-image u-section-1" id="sec-9100" data-image-width="626" data-image-height="385">
+  <div class="u-clearfix u-sheet u-sheet-1">
+    <div class="u-border-palette-1-base u-container-style u-group u-palette-4-light-3 u-preserve-proportions u-radius u-shape-round u-group-1" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="0">
+      <div class="u-container-layout u-container-layout-1" style="background-color: white; border-color: color-mix(in srgb, white percentage, black percentage);">
+        <h2 class="u-custom-font u-font-lato u-text u-text-default u-text-1">Sign Up</h2>
+        <br>
+        <br>
+        <form (ngSubmit)="onSubmit()" class="u-form u-form-custom">
+          <div class="u-form-group">
+            <label for="accountHolderName" class="u-label">Account Holder Name</label>
+            <input
+              type="text"
+              id="accountHolderName"
+              class="u-input"
+              name="accountHolderName"
+              [(ngModel)]="account.accountHolderName"
+              required
+              placeholder="Enter your name"
+            />
+          </div>
+          <br>
+          <div class="u-form-group">
+            <label for="email" class="u-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="u-input"
+              name="email"
+              [(ngModel)]="account.email"
+              required
+              placeholder="Enter your email"
+            />
+          </div>
+          <br>
+          <div class="u-form-group">
+            <label for="password" class="u-label">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="u-input"
+              name="password"
+              [(ngModel)]="account.password"
+              required
+              placeholder="Enter your password"
+            />
+          </div>
+          <br>
+          <div class="u-form-group">
+            <label for="confirmPassword" class="u-label">Confirm Password</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              class="u-input"
+              name="confirmPassword"
+              required
+              placeholder="Confirm your password"
+            />
+          </div>
+          <br>
+          <div style="height: 100px;">
+            <button
+                type="submit"
+
+              style="
+                background-image: linear-gradient(#41807c, #293332);
+                color: white;
+                border-radius: 50px;
+                padding: 15px 30px;
+                font-size: 20px;
+                align-items: center;
+                margin-left:200px;
+              "
+            >
+              Create Account
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+<section class="u-clearfix u-image u-section-1" id="sec-9100" data-image-width="626" data-image-height="385">
+  <div class="u-clearfix u-sheet u-sheet-1">
+    <div class="u-border-palette-1-base u-container-style u-group u-palette-4-light-3 u-preserve-proportions u-radius u-shape-round u-group-1" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="0">
+      <div class="u-container-layout u-container-layout-1">
+        <h2 class="u-custom-font u-font-lato u-text u-text-default u-text-1">Accounts List</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Account Holder Name</th>
+              <th>Balance</th>
+              <th>Email</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let account of accounts">
+              <td>{{ account.id }}</td>
+              <td>{{ account.accountHolderName }}</td>
+              <td>{{ account.balance }}</td>
+              <td>{{ account.email }}</td>
+              <td>{{ account.status }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
